@@ -1,0 +1,53 @@
+
+	#style-switcher
+	{
+		top:51px;
+		left:0px;
+		z-index:95;
+		width:300px;
+		position:fixed;
+	}
+	
+	#style-switcher-content
+	{
+		float:left;
+		width:230px;
+		background:#1A1A1A;
+		padding:20px 20px 10px 20px;		
+	}
+	
+	#style-switcher-close
+	{
+		width:30px;
+		float:left;
+		cursor:pointer;
+		background:#000000;
+		text-align:center;
+		padding:5px 0px 5px 0px;
+	}
+	
+		#style-switcher label,
+		#style-switcher select,
+		#style-switcher-close
+		{
+			font-size:13px;
+			font-family:'Share';
+		}
+	
+		#style-switcher label
+		{
+			top:7px;
+			float:left;
+			position:relative;
+			#top:0px;
+		}
+	
+		#style-switcher select
+		{
+			float:right;
+			width:150px;
+			padding:5px;
+			color:#666666;
+			border:#000000;
+		}
+		

@@ -1,0 +1,314 @@
+
+/******************************************************************************/
+/* Page																		  */
+/******************************************************************************/	
+
+	/**********************************************************************/
+	/* Slider                                                             */
+	/**********************************************************************/	
+
+	#slider,
+	#sliderBox
+	{
+		width:290px;
+	}
+
+	#sliderBox
+	{
+		float:right;
+		height:360px;
+		background:url('../image/preloader.gif') center center no-repeat;
+	}
+
+	#slider
+	{
+		height:320px;
+	}
+
+		#slider img
+		{
+			display:none;
+		}
+
+		div.nivo-controlNav
+		{
+			margin-top:-10px;
+			text-align:center;
+		}
+
+		div.nivo-controlNav a.nivo-control
+		{
+			width:11px;
+			height:11px;
+			font-size:0px;
+			margin-left:5px;
+			text-align:center;
+			color:transparent;
+			display:inline-block;
+			background-repeat:no-repeat;
+			background-position:0px 0px;
+			background-image:url('../image/slider_navigation.png');
+		}
+
+		div.nivo-controlNav a.nivo-control:first-child
+		{
+			margin-left:0px;
+		}
+
+		div.nivo-controlNav a.nivo-control:hover,
+		div.nivo-controlNav a.nivo-control.active
+		{
+			text-decoration:none;
+			background-position:0px -11px;
+		}
+
+    /**************************************************************************/
+    /* Gallery                                                                */
+    /**************************************************************************/
+	
+	div.gallery-list-wrapper
+	{
+		width:550px;
+		overflow:hidden;
+	}
+	
+		/**********************************************************************/
+		/* Gallery / List                                                     */
+		/**********************************************************************/
+
+		ul.gallery-list
+		{
+			width:555px;
+			overflow:hidden;
+			margin-top:10px;
+		}
+
+			ul.gallery-list li
+			{
+				width:180px;
+				height:130px; 
+				margin-right:5px;
+				margin-bottom:5px;
+			}
+
+				ul.gallery-list li.left,
+				ul.gallery-list li.center
+				{
+					float:left;
+				}
+
+				ul.gallery-list li.left
+				{
+					clear:both;
+				}
+
+				ul.gallery-list li.right
+				{
+					float:right;
+				}
+				
+		/**********************************************************************/
+		/* Gallery / Filter list                                              */
+		/**********************************************************************/
+			
+		ul.filter-list
+		{
+			margin-bottom:20px;
+		}
+		
+			ul.filter-list li
+			{
+				float:left;
+				margin-right:2px;
+				margin-bottom:2px;
+			}
+			
+				ul.filter-list li a
+				{
+					display:block;
+					text-align:center;
+					padding:7px 10px 7px 10px;
+					border:solid 1px #343434;
+				}
+				
+				ul.filter-list li a:hover,
+				ul.filter-list li a.selected
+				{
+					border-color:#000000;
+				}
+				
+		/**********************************************************************/
+		/* Gallery / Filter select box                                        */
+		/**********************************************************************/
+				
+		select.filter-select-box
+		{
+			width:180px;
+			border:none;
+			display:none;
+			cursor:pointer;
+			margin-left:auto;
+			margin-right:auto;
+			margin-bottom:10px;
+		}
+
+    /**************************************************************************/
+    /* Skill List                                                             */
+	/* Careerlist                                                             */
+    /**************************************************************************/
+
+	ul.skill-list li h5, 
+	ul.career-list li h5 
+	{
+		margin:0px;
+		font-size:15px;
+	}
+
+        /**********************************************************************/
+        /* Career List                                                        */
+        /**********************************************************************/	
+
+        ul.career-list
+        {
+           
+        }
+
+            ul.career-list li
+            {
+                margin-top:15px;
+            }
+
+                ul.career-list li p
+                {
+                    margin-top:0px;
+                    padding-top:0px;
+                }
+
+        /**********************************************************************/
+        /* Skill List                                                         */
+        /**********************************************************************/	
+
+        ul.skill-list
+        {
+            clear:both;
+        }
+
+            ul.skill-list li
+            {
+                margin-top:15px;
+            }
+
+                ul.skill-list li div.skill-list-item-level
+                {
+                    width:92px;
+                    float:right;
+                    margin-top:-18px;
+                }	
+
+                    ul.skill-list li div.skill-list-item-level span
+                    {
+                        opacity:0;
+                        float:left;
+                        width:16px;
+                        height:16px;
+                        display:block;
+                        margin-left:3px;
+                        background-repeat:no-repeat;
+                        background-position:0px -16px;
+                        background-image:url('../image/skill_icon.png');
+                        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                        #filter:alpha(opacity=0);
+                    }
+
+                    ul.skill-list li div.skill-list-item-level span:first-child
+                    {
+                        margin-left:0px;
+                    }
+
+                    ul.skill-list li div.skill-list-item-level span.skill-list-item-level-off
+                    {
+                        background-position:0px 0px;
+                    }
+
+                ul.skill-list li div.skill-list-item-period
+                {
+                    margin-top:5px;
+                    padding-top:5px;
+                    border-top:solid 1px #343434;
+                }	
+
+    /**************************************************************************/
+    /* Google Map                                                             */
+    /**************************************************************************/
+
+	#map
+	{
+		width:100%;
+		height:150px;
+	}
+
+		#map a
+		{
+			font-size:11px;
+			text-decoration:none!important;
+		}
+		
+    /**************************************************************************/
+    /* Contact List                                                           */
+    /**************************************************************************/
+
+	ul.contact-list
+	{
+
+	}
+
+		ul.contact-list li
+		{
+			line-height:150%;
+			margin-bottom:2px;
+			padding-left:25px;
+			background-repeat:no-repeat;
+			background-position:center left;
+		}
+
+		ul.contact-list li.contact-list-fax 	{ background-image:url('../image/contact_icon_fax.png'); 	}
+		ul.contact-list li.contact-list-mail  	{ background-image:url('../image/contact_icon_mail.png'); 	}
+		ul.contact-list li.contact-list-phone  	{ background-image:url('../image/contact_icon_phone.png'); 	}
+
+    /**************************************************************************/
+    /* Feature List                                                           */
+    /**************************************************************************/
+	
+	ul.feature-list
+	{
+		margin-top:30px;
+	}
+
+		ul.feature-list li
+		{
+			margin-bottom:30px;
+		}
+
+			ul.feature-list li h3
+			{
+				margin:0px;
+				padding:0px;
+				margin-bottom:10px;
+			}
+
+			ul.feature-list li p
+			{
+				margin:0px;
+				min-width:48px;
+				min-height:48px;
+				padding:00px 0px 0px 60px;
+				background-repeat:no-repeat;
+				background-position:0px -5px;
+			}
+
+		ul.feature-list li.feature-list-icon-rss p			{ background-image:url('../image/feature-icon/icon_rss.png');		}
+		ul.feature-list li.feature-list-icon-chat p			{ background-image:url('../image/feature-icon/icon_chat.png');		}
+		ul.feature-list li.feature-list-icon-clock p		{ background-image:url('../image/feature-icon/icon_clock.png');		}
+		ul.feature-list li.feature-list-icon-users p		{ background-image:url('../image/feature-icon/icon_users.png');		}
+		ul.feature-list li.feature-list-icon-basket	p		{ background-image:url('../image/feature-icon/icon_basket.png');	}
+		ul.feature-list li.feature-list-icon-briefcase p	{ background-image:url('../image/feature-icon/icon_briefcase.png'); }
